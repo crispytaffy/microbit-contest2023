@@ -1,0 +1,10 @@
+input.onGesture(Gesture.Shake, function () {
+    basic.pause(2000)
+    music.play(music.createSoundExpression(WaveShape.Noise, 500, 499, 255, 0, 2000, SoundExpressionEffect.Warble, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
+    basic.showIcon(IconNames.Happy)
+    basic.pause(2000)
+    basic.clearScreen()
+    basic.showIcon(IconNames.Heart)
+    basic.pause(2000)
+    basic.clearScreen()
+})
